@@ -25,7 +25,7 @@ The project will compare the baseline model which uses dense network head to oth
 
 ### Evaluation Metrics
 $$
-frac 1 N \sum_{\substack{i=1}}1[p_{i} == g_{i}]
+\frac{1}{N}\sum_{\substack{i=1}}1[p_{i} == g_{i}]
 $$
 
 
