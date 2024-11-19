@@ -30,7 +30,7 @@ $$
 $$
 RMSE: \sqrt{\frac{1}{N}\sum_{i=1}^N(p_{i}-g_{i})^2}
 $$
-Where:$p = prediction \: g = ground truth$
+Where:$p = prediction \: g = ground truth$.
 
 
 
