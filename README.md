@@ -25,8 +25,10 @@ The project will compare the baseline model which uses dense network head to oth
 
 ### Evaluation Metrics
 $$
-Accuracy: \frac{1}{N}\sum_{\substack{i=1}}1[p_{i} == g_{i}]
-RMSE: \sqrt{\frac{1}{N}\sum_{\substack{i=1}}(p_{i}-g_{i})^2}
+Accuracy: \frac{1}{N}\sum_{i=1}^N 1[p_{i} == g_{i}]
+$$
+$$
+RMSE: \sqrt{\frac{1}{N}\sum_{i=1}^N(p_{i}-g_{i})^2}
 $$
 
 
