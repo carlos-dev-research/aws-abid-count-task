@@ -30,7 +30,17 @@ $$
 $$
 RMSE: \sqrt{\frac{1}{N}\sum_{i=1}^N(p_{i}-g_{i})^2}
 $$
-Where:$$p = prediction \: g = ground truth$$
+Where:
+$$p = prediction$$
+$$g = ground truth$$
+
+### Project Design
+1. Download baseline model and [helper scripts](https://github.com/awslabs/open-data-docs/tree/main/docs/aft-vbi-pds)
+2. Build and design pytorch model variants
+3. Setup enviroment and create config scripts and notebooks
+4. Run different models and collect result for later comparisons
+5. Collect and structure results
+6. Make conclusions on results,  Did the new architectures got better results? Would it worth it to explore with the complete dataset?
 
 
 
