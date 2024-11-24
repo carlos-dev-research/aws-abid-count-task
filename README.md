@@ -22,7 +22,7 @@ In the project we will use Amazon SageMaker notebooks in the AWS environment. Th
 The dataset used is the [Amazon Bin Image Dataset](https://github.com/awslabs/open-data-docs/tree/main/docs/aft-vbi-pds)  provided by Amazon.
 - The features are images which are resized to 3x224x224 (RGB Channels x height x width) to keep consistency.
 - The target values are the number of object per image in other words a single positive int number (the script to processed target are shown in [Challenge Github Page](https://github.com/awslabs/open-data-docs/tree/main/docs/aft-vbi-pds)[Challenge Github Page](https://github.com/awslabs/open-data-docs/tree/main/docs/aft-vbi-pds).
-- For resource constraints the we will only use 1% of the dataset which is equivalent to 5000 samples.
+- For resource constraints we will only use 1% of the dataset which is equivalent to 5000 samples.
 
 
 ### Benchmarks
