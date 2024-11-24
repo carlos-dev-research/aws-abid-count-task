@@ -16,9 +16,15 @@ In the project we'll explore changing the pretrained model head with other archi
 The hypothesis is that these types of model that have been used to solved more complex problem in other domain have the potential to provided better results in this domain.
 The progress will be measure on the different model variations by accuracy and rmse error.
 
+In the project we will use Amazon SageMaker notebooks in the AWS environment. The Sagemaker Notebook allow us to easily deploy and train models, with Workers we can train models with different architectures or hyperparamters and otgether with their profiling tools, we can collect relevant information on model outputs.
+
 ### Dataset and Inputs
-The dataset used is the [Amazon Bin Image Dataset](https://github.com/awslabs/open-data-docs/tree/main/docs/aft-vbi-pds) (around 1% of it) due to time and resource constraints
-The features are images and the target values are the number of object per image (the script to processed target are shown in [Challenge Github Page](https://github.com/awslabs/open-data-docs/tree/main/docs/aft-vbi-pds)[Challenge Github Page](https://github.com/awslabs/open-data-docs/tree/main/docs/aft-vbi-pds)
+The dataset used is the [Amazon Bin Image Dataset](https://github.com/awslabs/open-data-docs/tree/main/docs/aft-vbi-pds)  provided by Amazon.
+(around 1% of it) due to time and resource constraints.
+The features are images which are resize to 3x224x224 (RGB Channels x height x width) to keep consistency.
+The target values are the number of object per image in other words a single positive int number (the script to processed target are shown in [Challenge Github Page](https://github.com/awslabs/open-data-docs/tree/main/docs/aft-vbi-pds)[Challenge Github Page](https://github.com/awslabs/open-data-docs/tree/main/docs/aft-vbi-pds).
+For resource constraints the we will only use 1% of the dataset which is equivalent to 5000 samples.
+
 
 ### Benchmarks
 The project will compare the baseline model which uses dense network head to other model variation with different heads, and collect evaluation metric to draw conclusions
