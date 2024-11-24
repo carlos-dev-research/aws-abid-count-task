@@ -16,7 +16,7 @@ In the project we'll explore changing the pretrained model head with other archi
 The hypothesis is that these types of model that have been used to solved more complex problem in other domain have the potential to provided better results in this domain.
 The progress will be measure on the different model variations by accuracy and rmse error.
 
-In the project we will use Amazon SageMaker notebooks in the AWS environment. The Sagemaker Notebook allow us to easily deploy and train models, with Workers we can train models with different architectures or hyperparamters and otgether with their profiling tools, we can collect relevant information on model outputs.
+In the project we will use Amazon SageMaker notebooks in the AWS environment. The Sagemaker Notebook allow us to easily deploy and train models, with estimator constructs (multi-instance training and hyperparameter finetunning) we can train models with different architectures or hyperparamters and together with profiling tools, we can collect relevant information on model outputs.
 
 ### Dataset and Inputs
 The dataset used is the [Amazon Bin Image Dataset](https://github.com/awslabs/open-data-docs/tree/main/docs/aft-vbi-pds)  provided by Amazon.
