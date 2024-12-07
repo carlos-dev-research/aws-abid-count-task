@@ -47,6 +47,26 @@ $$g = ground truth$$
 5. Collect and structure results
 6. Make conclusions on results,  Did the new architectures got better results? Would it worth it to explore with the complete dataset?
 
+### Notes
+- Study is showcased in aws-abid-count-task-Study.ipynb
+- Results are shown in results.csv
+
+### Final Conclusion from the Study
+#### Model Improvements and Observations
+- Additional Epochs: Extending training epochs yielded only marginal improvements. This could be attributed to limitations in the optimization algorithm or the model’s inherent inability to generalize to the data effectively. Notably, results showcased in [Abid Challenge Repo](https://github.com/silverbottlep/abid_challenge) under section 4.3 demonstrate that using a different optimization algorithm led to significantly better performance. Therefore, future work should prioritize experimenting with alternative optimization algorithms and re-evaluating previously tested models.
+
+- Model Selection: Among the explored models, the DNN_HEAD with a regression head emerged as the preferred choice over the baseline DNN_HEAD with a classification head. The regression head enables continuous estimation, which proved advantageous in tasks where we can leverage continuity of the solution, number of objects
+
+#### Performance Relative to Existing Benchmarks
+- Limitations of Current Approach: Despite achieving some advancements, our approach did not outperform publicly available models tailored to this task. For instance, the baseline solution trained using the script from [Abid Challenge Repo](https://github.com/silverbottlep/abid_challenge) achieved accuracies up to 40% and rmse as low as 1.3 but focused exclusively on six classes (0 to 5 objects).
+
+#### Recommendations for Future Work
+- Optimization Algorithms: Investigate and integrate alternative optimization algorithms to enhance model convergence and performance.
+- Model Generalization: Conduct further research into improving the generalization capabilities of the model, possibly through regularization techniques or additional data preprocessing.
+- Comparison with Public Models: Perform an in-depth comparison of our methods with state-of-the-art publicly available models to identify gaps and areas for improvement.
+- Focus on Continuous Estimation: Continue refining models with regression heads, as these have shown promise in delivering better approximations for quantity estimation tasks.
+
+While the results demonstrate potential, they also highlight the need for further experimentation and optimization to get a more in depth view of the problem at hand.
 
 
 # References
