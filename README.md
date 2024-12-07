@@ -50,6 +50,7 @@ $$g = ground truth$$
 ### Notes
 - Study is showcased in aws-abid-count-task-Study.ipynb
 - Results are shown in results.csv
+- The json files are the indexes and number of objects organized as they were used in the notebook
 
 ### Final Conclusion from the Study
 #### Model Improvements and Observations
