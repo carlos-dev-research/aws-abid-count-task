@@ -51,6 +51,7 @@ $$g = ground truth$$
 - Study is showcased in aws-abid-count-task-Study.ipynb
 - Results are shown in results.csv
 - The json files are the indexes and number of objects organized as they were used in the notebook
+- The initial weights are in resnet34_best-from_repo_cpu.pth.tar
 
 ### Final Conclusion from the Study
 #### Model Improvements and Observations
